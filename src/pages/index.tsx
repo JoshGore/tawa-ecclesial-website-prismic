@@ -1,6 +1,7 @@
 import React from "react"
 import tw, { styled } from "twin.macro"
 import Layout from "../components/layout"
+import Header from "../components/header"
 
 const Button = styled.button`
   ${tw`bg-blue-500 hover:bg-blue-800 text-white p-2 rounded`}
@@ -11,10 +12,7 @@ const Button = styled.button`
 // `
 const IndexPage = () => (
   <Layout>
-    <div>
-      <h1>Hi people</h1>
-      <Button>Activate</Button>
-    </div>
+    <Header />
   </Layout>
 )
 export default IndexPage
